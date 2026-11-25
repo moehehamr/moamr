@@ -1,0 +1,146 @@
+<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Mo_Amr | خدمات السوشيال ميديا</title><style>body{margin:0;background:#0b0b1a}</style></head><body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+#moamr{--bg:#0b0b1a;--card:#14142b;--line:#26264a;--p:#7c5cff;--p2:#00d4ff;--t:#f2f2ff;--m:#9a9acb;font-family:'Cairo',Tahoma,sans-serif;background:var(--bg);color:var(--t);direction:rtl;line-height:1.7;overflow:hidden;position:relative}
+#moamr *{box-sizing:border-box}
+#moamr a{color:inherit;text-decoration:none}
+#moamr .mo-wrap{max-width:1150px;margin:auto;padding:0 18px}
+#moamr nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0;position:relative;z-index:3}
+#moamr .mo-logo{font-weight:800;font-size:26px;background:linear-gradient(90deg,var(--p),var(--p2));-webkit-background-clip:text;background-clip:text;color:transparent;direction:ltr}
+#moamr .mo-nav a.l{margin-inline-start:20px;color:var(--m);font-weight:600}
+#moamr .mo-nav a.l:hover{color:#fff}
+#moamr .mo-btn{display:inline-block;border:0;cursor:pointer;font-family:inherit;font-weight:800;color:#fff;padding:12px 26px;border-radius:50px;background:linear-gradient(90deg,var(--p),var(--p2));box-shadow:0 8px 30px rgba(124,92,255,.4);transition:.25s}
+#moamr .mo-btn:hover{transform:translateY(-3px) scale(1.03)}
+#moamr .mo-hero{text-align:center;padding:60px 0 80px;position:relative}
+#moamr .mo-hero:before{content:"";position:absolute;inset:-100px 0 auto;height:420px;background:radial-gradient(circle at 50% 30%,rgba(124,92,255,.35),transparent 60%);z-index:0}
+#moamr h1{font-size:clamp(30px,6vw,56px);font-weight:800;margin:0 0 14px;position:relative}
+#moamr .mo-hero p{color:var(--m);font-size:18px;max-width:640px;margin:0 auto 28px;position:relative}
+#moamr .mo-float{position:absolute;font-size:34px;opacity:.85;animation:mofloat 6s ease-in-out infinite;z-index:1}
+@keyframes mofloat{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-26px) rotate(12deg)}}
+@keyframes mospin{to{transform:rotate(360deg)}}
+@keyframes mopulse{0%,100%{transform:scale(1)}50%{transform:scale(1.18)}}
+@keyframes moslide{from{transform:translateX(0)}to{transform:translateX(50%)}}
+#moamr .mo-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin:-30px 0 50px;position:relative;z-index:2}
+#moamr .mo-stat{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;text-align:center}
+#moamr .mo-stat b{font-size:30px;display:block;color:var(--p2)}
+#moamr .mo-stat span{color:var(--m);font-size:14px}
+#moamr h2{text-align:center;font-size:32px;margin:50px 0 8px}
+#moamr .sub{text-align:center;color:var(--m);margin-bottom:28px}
+#moamr .mo-marquee{overflow:hidden;white-space:nowrap;border-block:1px solid var(--line);padding:16px 0;direction:ltr;margin-top:20px}
+#moamr .mo-track{display:inline-block;animation:momarq 28s linear infinite}
+#moamr .mo-track i{font-size:34px;margin:0 26px;color:var(--m);transition:.3s}
+#moamr .mo-track i:hover{color:#fff;transform:scale(1.4)}
+@keyframes momarq{to{transform:translateX(-50%)}}
+#moamr .mo-tabs{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:26px}
+#moamr .mo-tab{background:var(--card);border:1px solid var(--line);color:var(--t);font-family:inherit;font-weight:600;padding:10px 18px;border-radius:50px;cursor:pointer;transition:.2s}
+#moamr .mo-tab i{margin-inline-end:6px}
+#moamr .mo-tab.on,#moamr .mo-tab:hover{border-color:var(--p);background:rgba(124,92,255,.18)}
+#moamr .mo-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
+#moamr .mo-card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px;transition:.3s;position:relative}
+#moamr .mo-card:hover{transform:translateY(-6px);border-color:var(--p);box-shadow:0 14px 40px rgba(124,92,255,.25)}
+#moamr .mo-card .ic{width:58px;height:58px;border-radius:16px;display:grid;place-items:center;font-size:28px;margin-bottom:12px;color:#fff;animation:mopulse 3s ease-in-out infinite}
+#moamr .mo-card h3{margin:0 0 4px;font-size:18px}
+#moamr .mo-card .pr{color:var(--p2);font-weight:800;font-size:15px;margin-bottom:10px}
+#moamr .mo-card select{width:100%;background:#0d0d22;color:var(--t);border:1px solid var(--line);border-radius:10px;padding:9px;font-family:inherit;margin-bottom:10px}
+#moamr .mo-card .tot{display:flex;justify-content:space-between;margin-bottom:12px;color:var(--m)}
+#moamr .mo-card .tot b{color:#fff}
+#moamr .mo-card .mo-btn{width:100%;text-align:center;padding:10px}
+#moamr .mo-steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+#moamr .mo-step{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px;text-align:center}
+#moamr .mo-step i{font-size:34px;color:var(--p);margin-bottom:10px;animation:mospin 8s linear infinite}
+#moamr .mo-step:nth-child(2) i{animation:mopulse 2.5s infinite}
+#moamr details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin-bottom:10px}
+#moamr summary{cursor:pointer;font-weight:700}
+#moamr details p{color:var(--m);margin:8px 0 0}
+#moamr footer{border-top:1px solid var(--line);margin-top:60px;padding:30px 0;text-align:center;color:var(--m)}
+#moamr .mo-wa{position:fixed;bottom:20px;left:20px;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;font-size:30px;color:#fff;z-index:9;animation:mopulse 2s infinite;box-shadow:0 8px 25px rgba(37,211,102,.5)}
+@media(max-width:640px){#moamr .mo-float:nth-of-type(2),#moamr .mo-float:nth-of-type(4){display:none}#moamr .mo-nav .l{display:none}#moamr .mo-float{font-size:22px}}
+</style>
+<div id="moamr">
+<div class="mo-wrap">
+<nav class="mo-nav"><div class="mo-logo">Mo_Amr</div><div><a class="l" href="#mo-services">الخدمات</a><a class="l" href="#mo-how">طريقة الطلب</a><a class="l" href="#mo-faq">الأسئلة</a></div></nav>
+<header class="mo-hero">
+<i class="fa-brands fa-instagram mo-float" style="top:10%;right:6%;color:#e1306c"></i>
+<i class="fa-brands fa-tiktok mo-float" style="top:40%;right:14%;color:#25f4ee;animation-delay:1s"></i>
+<i class="fa-brands fa-youtube mo-float" style="top:6%;left:10%;color:#ff0000;animation-delay:2s"></i>
+<i class="fa-brands fa-facebook mo-float" style="top:44%;left:6%;color:#1877f2;animation-delay:.5s"></i>
+<i class="fa-brands fa-telegram mo-float" style="bottom:8%;left:22%;color:#2aabee;animation-delay:1.5s"></i>
+<i class="fa-brands fa-x-twitter mo-float" style="bottom:6%;right:24%;animation-delay:2.5s"></i>
+<h1>زوّد متابعينك ولايكاتك على كل المنصات</h1>
+<p>Mo_Amr لخدمات السوشيال ميديا: متابعين، لايكات، مشاهدات وتفاعل. أسعار مناسبة ودعم سريع.</p>
+<a class="mo-btn" href="#mo-services">اطلب دلوقتي</a>
+</header>
+<section class="mo-stats">
+<div class="mo-stat"><b data-n="18">0</b><span>منصة مدعومة</span></div>
+<div class="mo-stat"><b data-n="60">0</b><span>خدمة متاحة</span></div>
+<div class="mo-stat"><b>24/7</b><span>دعم متواصل</span></div>
+<div class="mo-stat"><b>+</b><span>طلبات بتتنفذ يوميًا</span></div>
+</section>
+</div>
+<div class="mo-marquee"><div class="mo-track" id="mo-marq"></div></div>
+<div class="mo-wrap">
+<section id="mo-services"><h2>خدماتنا</h2><p class="sub">اختار المنصة، حدد الكمية، واطلب مباشرة على واتساب</p>
+<div class="mo-tabs" id="mo-tabs"></div><div class="mo-grid" id="mo-grid"></div></section>
+<section id="mo-how"><h2>إزاي تطلب؟</h2><p class="sub">تلات خطوات بس</p>
+<div class="mo-steps">
+<div class="mo-step"><i class="fa-solid fa-hand-pointer"></i><h3>اختار الخدمة</h3><p style="color:var(--m)">حدد المنصة والخدمة والكمية.</p></div>
+<div class="mo-step"><i class="fa-solid fa-paper-plane"></i><h3>ابعت الطلب</h3><p style="color:var(--m)">الزر بيفتح واتساب برسالة جاهزة فيها تفاصيل طلبك.</p></div>
+<div class="mo-step"><i class="fa-solid fa-gear"></i><h3>ننفذ الطلب</h3><p style="color:var(--m)">بنأكد معاك الدفع ونبدأ التنفيذ.</p></div></div></section>
+<section id="mo-faq"><h2>أسئلة شائعة</h2><p class="sub"></p>
+<details><summary>هل محتاج أدي الباسورد بتاع حسابي؟</summary><p>لا، محتاجين الرابط أو اسم المستخدم بس. ماتبعتش الباسورد لأي حد.</p></details>
+<details><summary>الخدمات بتاخد وقت قد إيه؟</summary><p>بتختلف حسب الخدمة والكمية، وبنحدد الوقت المتوقع معاك قبل الدفع.</p></details>
+<details><summary>ممكن النزول في المتابعين؟</summary><p>أحيانًا بيحصل نزول طبيعي في بعض الخدمات. اسأل عن الخدمات المضمونة قبل الطلب.</p></details>
+</section>
+<footer>© <span id="mo-y"></span> Mo_Amr. كل الحقوق محفوظة. العلامات التجارية ملك لأصحابها ولا يوجد ارتباط رسمي بها.</footer>
+</div>
+<a class="mo-wa" id="mo-wa" href="#" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+</div>
+<script>
+(function(){
+/* ===== عدّل هنا ===== */
+var WHATSAPP="YOUR_NUMBER"; /* رقمك بصيغة دولية بدون + مثال 201001234567 */
+var CUR="$";
+/* الأسعار أمثلة: السعر لكل 1000 */
+var P=[
+["instagram","Instagram","fa-instagram","#e1306c",[["متابعين",2.5],["لايكات",0.8],["مشاهدات ريلز",0.2],["تعليقات",3]]],
+["facebook","Facebook","fa-facebook","#1877f2",[["متابعين بيج",2.2],["لايكات منشور",0.9],["مشاهدات فيديو",0.3]]],
+["tiktok","TikTok","fa-tiktok","#25f4ee",[["متابعين",2.8],["لايكات",0.7],["مشاهدات",0.1],["مشاركات",0.5]]],
+["youtube","YouTube","fa-youtube","#ff0000",[["مشتركين",12],["مشاهدات",3],["لايكات",1.5]]],
+["x","X / Twitter","fa-x-twitter","#444",[["متابعين",4],["لايكات",1.2],["ريتويت",1.5]]],
+["telegram","Telegram","fa-telegram","#2aabee",[["أعضاء قناة",2],["مشاهدات منشور",0.1],["تفاعلات",0.4]]],
+["snapchat","Snapchat","fa-snapchat","#fffc00",[["متابعين",5],["مشاهدات سناب",0.6]]],
+["twitch","Twitch","fa-twitch","#9146ff",[["متابعين",6],["مشاهدين لايف",8]]],
+["linkedin","LinkedIn","fa-linkedin","#0a66c2",[["متابعين",9],["لايكات",3]]],
+["pinterest","Pinterest","fa-pinterest","#e60023",[["متابعين",4],["حفظ بينات",1.5]]],
+["spotify","Spotify","fa-spotify","#1db954",[["متابعين",5],["تشغيلات",2]]],
+["soundcloud","SoundCloud","fa-soundcloud","#ff5500",[["متابعين",3],["تشغيلات",0.5],["لايكات",1]]],
+["threads","Threads","fa-threads","#999",[["متابعين",3.5],["لايكات",1]]],
+["discord","Discord","fa-discord","#5865f2",[["أعضاء سيرفر",7]]],
+["reddit","Reddit","fa-reddit","#ff4500",[["أبفوت",3],["متابعين",5]]],
+["whatsapp","WhatsApp","fa-whatsapp","#25d366",[["متابعين قناة",4],["تفاعلات",1.5]]],
+["tumblr","Tumblr","fa-tumblr","#36465d",[["متابعين",4]]],
+["vk","VK","fa-vk","#4a76a8",[["أصدقاء",4],["لايكات",1]]]
+];
+var tabs=document.getElementById("mo-tabs"),grid=document.getElementById("mo-grid"),m=document.getElementById("mo-marq"),cur="all";
+var h='';P.concat(P).forEach(function(p){h+='<i class="fa-brands '+p[2]+'"></i>'});m.innerHTML=h;
+function tab(id,name,ic){var b=document.createElement("button");b.className="mo-tab"+(id===cur?" on":"");b.type="button";b.innerHTML='<i class="fa-brands '+ic+'"></i>'+name;b.onclick=function(){cur=id;render()};return b}
+function render(){tabs.innerHTML="";var a=document.createElement("button");a.type="button";a.className="mo-tab"+(cur==="all"?" on":"");a.textContent="الكل";a.onclick=function(){cur="all";render()};tabs.appendChild(a);
+P.forEach(function(p){tabs.appendChild(tab(p[0],p[1],p[2]))});
+grid.innerHTML="";var n=0;P.forEach(function(p){if(cur!=="all"&&cur!==p[0])return;p[4].forEach(function(s){n++;
+var c=document.createElement("div");c.className="mo-card";
+c.innerHTML='<div class="ic" style="background:'+p[3]+(p[0]==="snapchat"?';color:#000':'')+'"><i class="fa-brands '+p[2]+'"></i></div><h3>'+p[1]+' - '+s[0]+'</h3><div class="pr">'+CUR+s[1]+' لكل 1000</div><select></select><div class="tot"><span>الإجمالي</span><b></b></div><a class="mo-btn" href="#" target="_blank" rel="noopener">اطلب</a>';
+var sel=c.querySelector("select"),tot=c.querySelector(".tot b"),btn=c.querySelector(".mo-btn");
+[100,500,1000,5000,10000].forEach(function(q){var o=document.createElement("option");o.value=q;o.textContent=q.toLocaleString("en");sel.appendChild(o)});
+sel.value=1000;
+function up(){var q=+sel.value,t=(q/1000*s[1]).toFixed(2);tot.textContent=CUR+t;
+btn.href="https://wa.me/"+WHATSAPP+"?text="+encodeURIComponent("أهلاً، عايز أطلب: "+p[1]+" - "+s[0]+"\nالكمية: "+q+"\nالسعر: "+CUR+t)}
+sel.onchange=up;up();grid.appendChild(c)})});
+}
+render();
+document.getElementById("mo-wa").href="https://wa.me/"+WHATSAPP;
+document.getElementById("mo-y").textContent=new Date().getFullYear();
+document.querySelectorAll("#moamr [data-n]").forEach(function(e){var t=+e.dataset.n,i=0,id=setInterval(function(){i++;e.textContent=i;if(i>=t)clearInterval(id)},40)});
+})();
+</script>
+</body></html>
