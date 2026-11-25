@@ -8,8 +8,8 @@
 #moamr .mo-wrap{max-width:1150px;margin:auto;padding:0 18px}
 #moamr nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0;position:relative;z-index:3}
 #moamr .mo-logo{font-weight:800;font-size:26px;background:linear-gradient(90deg,var(--p),var(--p2));-webkit-background-clip:text;background-clip:text;color:transparent;direction:ltr}
-#moamr .mo-nav a.l{margin-inline-start:20px;color:var(--m);font-weight:600}
-#moamr .mo-nav a.l:hover{color:#fff}
+#moamr .mo-nav2 a.l{margin-inline-start:20px;color:var(--m);font-weight:600}
+#moamr .mo-nav2 a.l:hover{color:#fff}
 #moamr .mo-btn{display:inline-block;border:0;cursor:pointer;font-family:inherit;font-weight:800;color:#fff;padding:12px 26px;border-radius:50px;background:linear-gradient(90deg,var(--p),var(--p2));box-shadow:0 8px 30px rgba(124,92,255,.4);transition:.25s}
 #moamr .mo-btn:hover{transform:translateY(-3px) scale(1.03)}
 #moamr .mo-hero{text-align:center;padding:60px 0 80px;position:relative}
@@ -56,10 +56,37 @@
 #moamr footer{border-top:1px solid var(--line);margin-top:60px;padding:30px 0;text-align:center;color:var(--m)}
 #moamr .mo-wa{position:fixed;bottom:20px;left:20px;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;font-size:30px;color:#fff;z-index:9;animation:mopulse 2s infinite;box-shadow:0 8px 25px rgba(37,211,102,.5)}
 @media(max-width:640px){#moamr .mo-float:nth-of-type(2),#moamr .mo-float:nth-of-type(4){display:none}#moamr .mo-nav .l{display:none}#moamr .mo-float{font-size:22px}}
+
+#moamr .mo-nav2{display:flex;flex-wrap:wrap;justify-content:flex-end}
+#moamr nav{flex-wrap:wrap;gap:8px}
+#moamr .mo-form{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:24px;max-width:720px;margin:auto;display:grid;gap:14px}
+#moamr .mo-form label{font-weight:700;display:block;margin-bottom:4px}
+#moamr .mo-form select,#moamr .mo-form input,#moamr .mo-search{width:100%;background:#0d0d22;color:var(--t);border:1px solid var(--line);border-radius:12px;padding:11px;font-family:inherit;font-size:15px}
+#moamr .mo-two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+#moamr .mo-total{display:flex;justify-content:space-between;align-items:center;background:rgba(124,92,255,.12);border-radius:14px;padding:12px 16px;color:var(--m)}
+#moamr .mo-total b{font-size:24px;color:#fff}
+#moamr .mo-tablewrap{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:18px}
+#moamr table{width:100%;border-collapse:collapse;min-width:520px}
+#moamr th,#moamr td{padding:11px 14px;text-align:right;border-bottom:1px solid var(--line)}
+#moamr th{color:var(--m);font-weight:600;font-size:14px}
+#moamr tr:last-child td{border-bottom:0}
+#moamr .mo-mini{border:0;cursor:pointer;font-family:inherit;font-weight:700;color:#fff;padding:6px 14px;border-radius:20px;background:var(--p)}
+#moamr .mo-empty{text-align:center;color:var(--m);padding:26px}
+#moamr .mo-pay{background:linear-gradient(135deg,#2a1a0a,#14142b);border:1px solid #ff7900;border-radius:24px;padding:28px;max-width:720px;margin:auto;text-align:center}
+#moamr .mo-pay .num{font-size:clamp(28px,7vw,44px);font-weight:800;letter-spacing:2px;direction:ltr;color:#fff;margin:8px 0}
+#moamr .mo-pay ol{text-align:right;color:var(--m);max-width:520px;margin:18px auto 0;padding-inline-start:22px}
+#moamr .mo-news{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+#moamr .mo-nw{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px}
+#moamr .mo-nw small{color:var(--p2)}
+#moamr .mo-terms{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:8px 24px;max-width:820px;margin:auto}
+#moamr .mo-terms li{margin:10px 0;color:var(--m)}
+#moamr .mo-aff{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:24px;max-width:720px;margin:auto;text-align:center}
+#moamr .mo-aff input{width:100%;background:#0d0d22;color:var(--t);border:1px solid var(--line);border-radius:12px;padding:11px;font-family:inherit;margin:8px 0;direction:ltr;text-align:left}
+@media(max-width:640px){#moamr .mo-two{grid-template-columns:1fr}#moamr .mo-nav2{display:none}#moamr nav{justify-content:center}#moamr .mo-logo{font-size:30px}}
 </style>
 <div id="moamr">
 <div class="mo-wrap">
-<nav class="mo-nav"><div class="mo-logo">Mo_Amr</div><div><a class="l" href="#mo-services">الخدمات</a><a class="l" href="#mo-how">طريقة الطلب</a><a class="l" href="#mo-faq">الأسئلة</a></div></nav>
+<nav class="mo-nav" style="display:flex"><div class="mo-logo">Mo_Amr</div><div class="mo-nav2"><a class="l" href="#mo-order">طلب جديد</a><a class="l" href="#mo-list">الخدمات</a><a class="l" href="#mo-history">سجل الطلبات</a><a class="l" href="#mo-pay">الدفع</a><a class="l" href="#mo-news">الأخبار</a><a class="l" href="#mo-faq">الأسئلة</a><a class="l" href="#mo-aff">الشركاء</a></div></nav>
 <header class="mo-hero">
 <i class="fa-brands fa-instagram mo-float" style="top:10%;right:6%;color:#e1306c"></i>
 <i class="fa-brands fa-tiktok mo-float" style="top:40%;right:14%;color:#25f4ee;animation-delay:1s"></i>
@@ -80,6 +107,27 @@
 </div>
 <div class="mo-marquee"><div class="mo-track" id="mo-marq"></div></div>
 <div class="mo-wrap">
+<section id="mo-order"><h2>طلب جديد</h2><p class="sub">اختار الخدمة والكمية وابعت الطلب على واتساب</p>
+<form class="mo-form" id="mo-f" onsubmit="return false">
+<div><label>المنصة</label><select id="mo-fp"></select></div>
+<div><label>الخدمة</label><select id="mo-fs"></select></div>
+<div><label>الرابط أو اسم المستخدم</label><input id="mo-fl" placeholder="https://..." dir="ltr"></div>
+<div class="mo-two"><div><label>الكمية</label><input id="mo-fq" type="number" min="10" step="10" value="1000"></div><div><label>السعر لكل 1000</label><input id="mo-fr" readonly></div></div>
+<div class="mo-total"><span>الإجمالي</span><b id="mo-ft">$0</b></div>
+<button class="mo-btn" id="mo-fb" type="button">ابعت الطلب على واتساب</button>
+<div id="mo-fm" style="color:var(--m);text-align:center;font-size:14px"></div>
+</form></section>
+<section id="mo-list"><h2>قائمة الخدمات</h2><p class="sub">كل الخدمات والأسعار لكل 1000</p>
+<input class="mo-search" id="mo-q" placeholder="ابحث عن خدمة أو منصة" style="max-width:720px;display:block;margin:0 auto 16px">
+<div class="mo-tablewrap"><table><thead><tr><th>#</th><th>المنصة</th><th>الخدمة</th><th>السعر / 1000</th><th></th></tr></thead><tbody id="mo-tb"></tbody></table></div></section>
+<section id="mo-history"><h2>سجل الطلبات</h2><p class="sub">بيتحفظ على جهازك بس، مش على سيرفر</p>
+<div class="mo-tablewrap"><table><thead><tr><th>التاريخ</th><th>الخدمة</th><th>الكمية</th><th>الإجمالي</th></tr></thead><tbody id="mo-hb"></tbody></table></div>
+<div style="text-align:center;margin-top:12px"><button class="mo-mini" id="mo-hc" type="button">مسح السجل</button></div></section>
+<section id="mo-pay"><h2>الدفع</h2><p class="sub">الدفع بأورنج كاش، والتحويل مقبول من أي محفظة</p>
+<div class="mo-pay"><i class="fa-solid fa-mobile-screen-button" style="font-size:36px;color:#ff7900"></i>
+<div style="color:var(--m)">حوّل على رقم أورنج كاش (من أي محفظة)</div><div class="num" id="mo-num"></div>
+<button class="mo-btn" id="mo-cp" type="button">نسخ الرقم</button>
+<ol><li>اختار طلبك وابعته على واتساب.</li><li>حوّل المبلغ المتفق عليه على الرقم ده.</li><li>ابعت صورة التحويل على واتساب وهنبدأ التنفيذ.</li></ol></div></section>
 <section id="mo-services"><h2>خدماتنا</h2><p class="sub">اختار المنصة، حدد الكمية، واطلب مباشرة على واتساب</p>
 <div class="mo-tabs" id="mo-tabs"></div><div class="mo-grid" id="mo-grid"></div></section>
 <section id="mo-how"><h2>إزاي تطلب؟</h2><p class="sub">تلات خطوات بس</p>
@@ -87,11 +135,24 @@
 <div class="mo-step"><i class="fa-solid fa-hand-pointer"></i><h3>اختار الخدمة</h3><p style="color:var(--m)">حدد المنصة والخدمة والكمية.</p></div>
 <div class="mo-step"><i class="fa-solid fa-paper-plane"></i><h3>ابعت الطلب</h3><p style="color:var(--m)">الزر بيفتح واتساب برسالة جاهزة فيها تفاصيل طلبك.</p></div>
 <div class="mo-step"><i class="fa-solid fa-gear"></i><h3>ننفذ الطلب</h3><p style="color:var(--m)">بنأكد معاك الدفع ونبدأ التنفيذ.</p></div></div></section>
+<section id="mo-news"><h2>الأخبار والتحديثات</h2><p class="sub"></p>
+<div class="mo-news">
+<div class="mo-nw"><small>25 نوفمبر 2026</small><h3>أقسام جديدة في الموقع</h3><p style="color:var(--m)">أضفنا طلب جديد وقائمة الخدمات وسجل الطلبات وقسم الدفع.</p></div>
+<div class="mo-nw"><small>25 نوفمبر 2026</small><h3>الدفع بأورنج كاش</h3><p style="color:var(--m)">تقدر تحوّل على رقم الدعم وتبعت صورة التحويل على واتساب.</p></div>
+<div class="mo-nw"><small>25 نوفمبر 2026</small><h3>برنامج الشركاء</h3><p style="color:var(--m)">اعمل رابط خاص بيك وشاركه. اتواصل معانا على واتساب لتفاصيل العمولة.</p></div></div></section>
+<section id="mo-terms"><h2>شروط الخدمة</h2><p class="sub"></p>
+<ol class="mo-terms"><li>الطلب بيبدأ بعد تأكيد الدفع.</li><li>لازم الحساب يكون عام (مش خاص) وقت التنفيذ.</li><li>ماتغيّرش اسم المستخدم أثناء تنفيذ الطلب.</li><li>الوقت المتوقع بيختلف حسب الخدمة والكمية.</li><li>مفيش استرجاع بعد بدء التنفيذ، وأي مشكلة كلمنا على واتساب.</li><li>المنصات المذكورة ملكها أصحابها ومفيش ارتباط رسمي بيها.</li></ol></section>
 <section id="mo-faq"><h2>أسئلة شائعة</h2><p class="sub"></p>
 <details><summary>هل محتاج أدي الباسورد بتاع حسابي؟</summary><p>لا، محتاجين الرابط أو اسم المستخدم بس. ماتبعتش الباسورد لأي حد.</p></details>
 <details><summary>الخدمات بتاخد وقت قد إيه؟</summary><p>بتختلف حسب الخدمة والكمية، وبنحدد الوقت المتوقع معاك قبل الدفع.</p></details>
 <details><summary>ممكن النزول في المتابعين؟</summary><p>أحيانًا بيحصل نزول طبيعي في بعض الخدمات. اسأل عن الخدمات المضمونة قبل الطلب.</p></details>
+<details><summary>أدفع إزاي؟</summary><p>بأورنج كاش على رقم الدعم، والتحويل مقبول من أي محفظة، وبعدين تبعت صورة التحويل على واتساب.</p></details>
+<details><summary>هل سجل الطلبات بيتحفظ؟</summary><p>بيتحفظ على جهازك فقط. لو مسحت بيانات المتصفح هيختفي.</p></details>
 </section>
+<section id="mo-aff"><h2>شركاء بالعمولة</h2><p class="sub"></p>
+<div class="mo-aff"><p style="color:var(--m)">اكتب اسمك واعمل رابط خاص بيك. شاركه، ولما حد يطلب عن طريقك كلمنا على واتساب عشان نحسب عمولتك.</p>
+<input id="mo-an" placeholder="اسمك بالإنجليزي" dir="ltr"><input id="mo-al" readonly placeholder="رابطك هيظهر هنا">
+<button class="mo-btn" id="mo-ab" type="button">اعمل الرابط</button> <button class="mo-mini" id="mo-ac" type="button">نسخ</button></div></section>
 <footer>© <span id="mo-y"></span> Mo_Amr. كل الحقوق محفوظة. العلامات التجارية ملك لأصحابها ولا يوجد ارتباط رسمي بها.</footer>
 </div>
 <a class="mo-wa" id="mo-wa" href="#" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
@@ -138,6 +199,44 @@ btn.href="https://wa.me/"+WHATSAPP+"?text="+encodeURIComponent("أهلاً، ع�
 sel.onchange=up;up();grid.appendChild(c)})});
 }
 render();
+
+/* ===== الأقسام الجديدة ===== */
+var PAYNUM="01223857973";
+var fp=document.getElementById("mo-fp"),fs=document.getElementById("mo-fs"),fq=document.getElementById("mo-fq"),fr=document.getElementById("mo-fr"),ft=document.getElementById("mo-ft"),fl=document.getElementById("mo-fl"),fm=document.getElementById("mo-fm");
+P.forEach(function(p,i){var o=document.createElement("option");o.value=i;o.textContent=p[1];fp.appendChild(o)});
+function fsv(){fs.innerHTML="";P[fp.value][4].forEach(function(s,i){var o=document.createElement("option");o.value=i;o.textContent=s[0];fs.appendChild(o)});fcalc()}
+function fcalc(){var s=P[fp.value][4][fs.value||0];fr.value=CUR+s[1];var q=+fq.value||0;ft.textContent=CUR+(q/1000*s[1]).toFixed(2)}
+fp.onchange=fsv;fs.onchange=fcalc;fq.oninput=fcalc;fsv();
+var HK="moamr_orders";
+function hget(){try{return JSON.parse(localStorage.getItem(HK)||"[]")}catch(e){return[]}}
+function hshow(){var a=hget(),b=document.getElementById("mo-hb");b.innerHTML="";
+if(!a.length){b.innerHTML='<tr><td colspan="4" class="mo-empty">لسه مفيش طلبات</td></tr>';return}
+a.slice().reverse().forEach(function(r){var tr=document.createElement("tr");[r.d,r.s,r.q,r.t].forEach(function(v){var td=document.createElement("td");td.textContent=v;tr.appendChild(td)});b.appendChild(tr)})}
+function hadd(name,q,t){var a=hget();a.push({d:new Date().toLocaleDateString("ar-EG"),s:name,q:q,t:t});try{localStorage.setItem(HK,JSON.stringify(a.slice(-50)))}catch(e){}hshow()}
+document.getElementById("mo-hc").onclick=function(){try{localStorage.removeItem(HK)}catch(e){}hshow()};
+document.getElementById("mo-fb").onclick=function(){var q=+fq.value;if(!q||q<10){fm.textContent="اكتب كمية صحيحة";return}
+var link=fl.value.trim();if(!link){fm.textContent="اكتب الرابط أو اسم المستخدم";return}
+var p=P[fp.value],s=p[4][fs.value],t=CUR+(q/1000*s[1]).toFixed(2),name=p[1]+" - "+s[0];fm.textContent="";
+hadd(name,q,t);
+window.open("https://wa.me/"+WHATSAPP+"?text="+encodeURIComponent("أهلاً، عايز أطلب: "+name+"\nالرابط: "+link+"\nالكمية: "+q+"\nالسعر: "+t),"_blank")};
+hshow();
+var tb=document.getElementById("mo-tb"),sq=document.getElementById("mo-q");
+function lst(){var k=sq.value.trim().toLowerCase(),n=0;tb.innerHTML="";
+P.forEach(function(p,i){p[4].forEach(function(s,j){if(k&&(p[1]+" "+s[0]).toLowerCase().indexOf(k)<0)return;n++;
+var tr=document.createElement("tr");[n,p[1],s[0],CUR+s[1]].forEach(function(v){var td=document.createElement("td");td.textContent=v;tr.appendChild(td)});
+var td=document.createElement("td"),b=document.createElement("button");b.className="mo-mini";b.type="button";b.textContent="اطلب";
+b.onclick=function(){fp.value=i;fsv();fs.value=j;fcalc();document.getElementById("mo-order").scrollIntoView({behavior:"smooth"})};
+td.appendChild(b);tr.appendChild(td);tb.appendChild(tr)})});
+if(!n)tb.innerHTML='<tr><td colspan="5" class="mo-empty">مفيش نتائج</td></tr>'}
+sq.oninput=lst;lst();
+function cpy(txt,btn,ok){var done=function(){var o=btn.textContent;btn.textContent=ok;setTimeout(function(){btn.textContent=o},1500)};
+if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(done,done)}else{done()}}
+document.getElementById("mo-num").textContent=PAYNUM;
+document.getElementById("mo-cp").onclick=function(){cpy(PAYNUM,this,"اتنسخ")};
+var al=document.getElementById("mo-al");
+document.getElementById("mo-ab").onclick=function(){var n=document.getElementById("mo-an").value.trim().replace(/[^A-Za-z0-9_]/g,"");if(!n){al.value="اكتب اسمك الأول";return}
+al.value=location.origin+location.pathname+"?ref="+n};
+document.getElementById("mo-ac").onclick=function(){if(al.value)cpy(al.value,this,"اتنسخ")};
 document.getElementById("mo-wa").href="https://wa.me/"+WHATSAPP;
 document.getElementById("mo-y").textContent=new Date().getFullYear();
 document.querySelectorAll("#moamr [data-n]").forEach(function(e){var t=+e.dataset.n,i=0,id=setInterval(function(){i++;e.textContent=i;if(i>=t)clearInterval(id)},40)});
